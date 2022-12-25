@@ -1,5 +1,5 @@
 #include<stdio.h>
-void merage(int t[],int v[],int n,int m){
+void merage(int *t[],int *v[],int n,int m){
  int i,c,j;
   for(i=0;i<n;i++){
     c=t[i];
@@ -11,22 +11,25 @@ void merage(int t[],int v[],int n,int m){
         }
     }
   }
+  43
 }
 void main(){
  int i,j;
  int v[10];
  int t[10];
   for(i=0;i<5;i++){
+    printf("entrer un element ");
     scanf("%d",&t[i]);
 }
   for(j=0;j<3;j++){
+    printf("entrer un entier ");
     scanf("%d",&v[j]);
 }
 merage(t,v,5,3);
   for(i=0;i<5;i++){
-    printf("%d",t[i]/n);
+    printf("%d",t[i]);
 }
   for(j=0;j<3;j++){
-    printf("%d",v[j]/n);
+    printf("%d",v[j]);
 }
 }
